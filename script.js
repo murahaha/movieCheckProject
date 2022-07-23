@@ -23,3 +23,10 @@
 
 'use strict';
 let numberOFilms = prompt("How many movies did you watch?", "5");
+let personalMovieDB = {
+    count: numberOFilms,
+    movies:{},
+    actors:{},
+    genres:[],
+    privat: false
+};
