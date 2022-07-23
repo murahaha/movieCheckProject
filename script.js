@@ -22,11 +22,21 @@
 Проверить, чтобы все работало без ошибок в консоли */
 
 'use strict';
-let numberOFilms = prompt("How many movies did you watch?", "5");
-let personalMovieDB = {
+const numberOFilms = prompt("How many movies did you watch?", "5");
+const personalMovieDB = {
     count: numberOFilms,
     movies:{},
     actors:{},
     genres:[],
     privat: false
 };
+
+const a = prompt("one of the last movie",'');
+const b = prompt("how will you rate it",'');
+const c = prompt("one of the last movie",'');
+const d = prompt("how will you rate it",'');
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
+
